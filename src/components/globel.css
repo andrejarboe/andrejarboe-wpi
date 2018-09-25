@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --space: 1.5em 0;
+  --space: 2em 0;
+  --primary: #001f3f;
+  --light: #fff;
+  --bodyMargin: 35px;
+}
+
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Site-content {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+  padding-top: 0; /* Needed for netlify*/
+}
+
+.Site-content:after {
+  content: '\00a0';
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn{
+  border: 2px solid var(--primary);
+  padding: 16px 60px;
+}
+
+/* globel container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
