@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import M from 'materialize-css/dist/js/materialize.min'
+// import M from 'materialize-css/dist/js/materialize.min'
 import Link from 'gatsby-link'
 
 import './navbar.css'
 
 class NavBar extends Component {
-  componentDidMount() {
-    //sidenav
-    const sideNav = document.querySelector('.sidenav')
-    const instance = M.Sidenav.init(sideNav, {})
-  }
+  // componentDidMount() {
+  //   //sidenav
+  //   const sideNav = document.querySelector('.sidenav')
+  //   const instance = M.Sidenav.init(sideNav, {})
+  // }
 
   render() {
     return (
